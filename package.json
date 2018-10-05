@@ -8,7 +8,7 @@
     "format": "prettier --write \" src/**/*.{js,jsx,css,json}\"",
     "format:check": "prettier --list-different \" src/**/*.{js,jsx,css,json}\"",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html --open"
   },
   "husky": {
     "hooks": {
@@ -19,7 +19,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^5.6.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
