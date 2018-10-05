@@ -11,7 +11,7 @@ class Results extends React.Component {
   state = {
     pets: []
   };
-  
+
   componentDidMount() {
     //Ask for all animals from location
     petfinder.pet
